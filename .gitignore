@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# PRIVATE: papers, extracted text, packs and review queues must never be committed or deployed
+private/
+*.pack.json

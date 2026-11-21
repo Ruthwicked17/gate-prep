@@ -1,0 +1,800 @@
+{
+ "meta": {
+  "version": "2026-11-21",
+  "weightNote": "EE marks = 3-year average planning weights (MadeEasy 2023-25 exact, PW 2017-25 ranges; inferred). RA marks = PROXY: brochure confirms GA 15 / Part A 60 / Part B 25 only; sub-section split is unpublished.",
+  "eeSource": "avg",
+  "raSource": "proxy"
+ },
+ "sections": {
+  "maths": "Engineering Mathematics",
+  "circuits": "Electric Circuits",
+  "signals": "Signals and Systems",
+  "control": "Control Systems",
+  "analog": "Analog and Digital Electronics",
+  "machines": "Electrical Machines",
+  "power": "Power Systems",
+  "pe": "Power Electronics",
+  "emf": "Electromagnetic Fields",
+  "meas": "Measurements",
+  "ra": "Robotics and Automation (RA only)",
+  "ga": "General Aptitude"
+ },
+ "concepts": [
+  {
+   "id": "m-la",
+   "sec": "maths",
+   "title": "Linear Algebra",
+   "hours": 6,
+   "ee": 2,
+   "ra": 3,
+   "pre": [],
+   "sub": [
+    "Matrix algebra, rank, determinant",
+    "Systems of linear equations",
+    "Eigenvalues and eigenvectors"
+   ]
+  },
+  {
+   "id": "m-calc",
+   "sec": "maths",
+   "title": "Calculus and Vector Calculus",
+   "hours": 8,
+   "ee": 3,
+   "ra": 3,
+   "pre": [],
+   "sub": [
+    "Mean value theorems, limits, maxima/minima",
+    "Definite and improper integrals, multiple integrals",
+    "Partial derivatives, Taylor series",
+    "Gradient, divergence, curl, vector identities",
+    "Line/surface/volume integrals; Stokes, Gauss, Green"
+   ]
+  },
+  {
+   "id": "m-de",
+   "sec": "maths",
+   "title": "Differential Equations",
+   "hours": 7,
+   "ee": 2.5,
+   "ra": 3,
+   "pre": [
+    "m-calc"
+   ],
+   "sub": [
+    "First-order linear and nonlinear",
+    "Higher-order linear ODEs, constant coefficients",
+    "Variation of parameters, Cauchy-Euler",
+    "Initial/boundary value problems",
+    "PDEs, separation of variables"
+   ]
+  },
+  {
+   "id": "m-cv",
+   "sec": "maths",
+   "title": "Complex Variables",
+   "hours": 5,
+   "ee": 2,
+   "ra": 0,
+   "pre": [
+    "m-calc"
+   ],
+   "sub": [
+    "Analytic functions",
+    "Cauchy integral theorem and formula",
+    "Taylor and Laurent series",
+    "Residue theorem"
+   ]
+  },
+  {
+   "id": "m-ps",
+   "sec": "maths",
+   "title": "Probability and Statistics",
+   "hours": 6,
+   "ee": 3,
+   "ra": 3.5,
+   "pre": [],
+   "sub": [
+    "Conditional probability",
+    "Random variables, PDF/CDF",
+    "Binomial, Poisson, Normal distributions",
+    "Mean, median, mode, std deviation",
+    "Correlation, regression (EE); hypothesis testing (RA)"
+   ]
+  },
+  {
+   "id": "m-nm",
+   "sec": "maths",
+   "title": "Numerical Methods",
+   "hours": 4,
+   "ee": 0,
+   "ra": 2.5,
+   "pre": [
+    "m-la"
+   ],
+   "sub": [
+    "Roots of algebraic/transcendental equations",
+    "Trapezoidal and Simpson rules",
+    "Finite differences, ODE single/multi-step methods"
+   ]
+  },
+  {
+   "id": "c-basic",
+   "sec": "circuits",
+   "title": "Network Elements and Solution Methods",
+   "hours": 5,
+   "ee": 2,
+   "ra": 1.5,
+   "pre": [],
+   "sub": [
+    "Ideal/dependent sources, R, L, C, M",
+    "KCL, KVL, node and mesh analysis"
+   ]
+  },
+  {
+   "id": "c-thm",
+   "sec": "circuits",
+   "title": "Network Theorems",
+   "hours": 4,
+   "ee": 1.5,
+   "ra": 1.5,
+   "pre": [
+    "c-basic"
+   ],
+   "sub": [
+    "Thevenin, Norton",
+    "Superposition",
+    "Maximum power transfer"
+   ]
+  },
+  {
+   "id": "c-trans",
+   "sec": "circuits",
+   "title": "Transient, Steady-state AC and Resonance",
+   "hours": 6,
+   "ee": 2.5,
+   "ra": 2,
+   "pre": [
+    "c-thm"
+   ],
+   "sub": [
+    "Transient response of DC and AC networks",
+    "Sinusoidal steady state, phasors",
+    "Resonance"
+   ]
+  },
+  {
+   "id": "c-2port",
+   "sec": "circuits",
+   "title": "Two-port, Three-phase, Complex Power",
+   "hours": 6,
+   "ee": 2.5,
+   "ra": 2,
+   "pre": [
+    "c-trans"
+   ],
+   "sub": [
+    "Two-port networks",
+    "Balanced three-phase, star-delta",
+    "Complex power and power factor"
+   ]
+  },
+  {
+   "id": "s-basic",
+   "sec": "signals",
+   "title": "Signals and LTI Systems",
+   "hours": 5,
+   "ee": 2.5,
+   "ra": 2.5,
+   "pre": [
+    "m-calc"
+   ],
+   "sub": [
+    "CT/DT signal representation, shifting and scaling",
+    "LTI and causal systems",
+    "Convolution"
+   ]
+  },
+  {
+   "id": "s-fs",
+   "sec": "signals",
+   "title": "Fourier Series, Fourier Transform, Sampling",
+   "hours": 6,
+   "ee": 3,
+   "ra": 3,
+   "pre": [
+    "s-basic"
+   ],
+   "sub": [
+    "Fourier series (CT and DT)",
+    "Fourier transform properties",
+    "Sampling theorem",
+    "RMS and average of periodic waveforms"
+   ]
+  },
+  {
+   "id": "s-lz",
+   "sec": "signals",
+   "title": "Laplace and Z Transforms",
+   "hours": 6,
+   "ee": 3,
+   "ra": 2.5,
+   "pre": [
+    "s-fs"
+   ],
+   "sub": [
+    "Laplace transform, ROC",
+    "Z transform, ROC",
+    "System analysis with transforms"
+   ]
+  },
+  {
+   "id": "k-model",
+   "sec": "control",
+   "title": "Modelling, Transfer Functions, Block Diagrams",
+   "hours": 5,
+   "ee": 2.5,
+   "ra": 2,
+   "pre": [
+    "s-lz"
+   ],
+   "sub": [
+    "Mathematical modelling, feedback principle",
+    "Transfer function",
+    "Block diagram reduction, signal flow graphs"
+   ]
+  },
+  {
+   "id": "k-time",
+   "sec": "control",
+   "title": "Time Response and Steady-state Error",
+   "hours": 4,
+   "ee": 2,
+   "ra": 2,
+   "pre": [
+    "k-model"
+   ],
+   "sub": [
+    "Transient response specs",
+    "Steady-state error, system type"
+   ]
+  },
+  {
+   "id": "k-stab",
+   "sec": "control",
+   "title": "Stability: Routh, Nyquist, Bode, Root Locus",
+   "hours": 8,
+   "ee": 3,
+   "ra": 2.5,
+   "pre": [
+    "k-time"
+   ],
+   "sub": [
+    "Routh-Hurwitz",
+    "Root locus",
+    "Bode plots",
+    "Nyquist criterion, gain/phase margin"
+   ]
+  },
+  {
+   "id": "k-comp",
+   "sec": "control",
+   "title": "Compensators and PID",
+   "hours": 4,
+   "ee": 1,
+   "ra": 1.5,
+   "pre": [
+    "k-stab"
+   ],
+   "sub": [
+    "Lag, lead, lead-lag",
+    "P, PI, PID controllers"
+   ]
+  },
+  {
+   "id": "k-ss",
+   "sec": "control",
+   "title": "State Space Models",
+   "hours": 4,
+   "ee": 0.5,
+   "ra": 0,
+   "pre": [
+    "k-model"
+   ],
+   "sub": [
+    "State space model",
+    "Solution of state equations of LTI systems"
+   ]
+  },
+  {
+   "id": "a-diode",
+   "sec": "analog",
+   "title": "Diode Circuits",
+   "hours": 3,
+   "ee": 1.5,
+   "ra": 0,
+   "pre": [
+    "c-basic"
+   ],
+   "sub": [
+    "Clipping, clamping",
+    "Rectifiers"
+   ]
+  },
+  {
+   "id": "a-amp",
+   "sec": "analog",
+   "title": "Amplifiers, Biasing, Feedback",
+   "hours": 7,
+   "ee": 2.5,
+   "ra": 2,
+   "pre": [
+    "a-diode"
+   ],
+   "sub": [
+    "Biasing and equivalent circuits",
+    "Frequency response",
+    "Feedback amplifiers and oscillators"
+   ]
+  },
+  {
+   "id": "a-opamp",
+   "sec": "analog",
+   "title": "Op-amps, Filters, Timers",
+   "hours": 6,
+   "ee": 2.5,
+   "ra": 3,
+   "pre": [
+    "a-amp"
+   ],
+   "sub": [
+    "Op-amp characteristics and applications",
+    "Active filters (Sallen-Key, Butterworth)",
+    "VCOs, 555 timers"
+   ]
+  },
+  {
+   "id": "a-dig",
+   "sec": "analog",
+   "title": "Digital Logic",
+   "hours": 5,
+   "ee": 2.5,
+   "ra": 3,
+   "pre": [],
+   "sub": [
+    "Boolean algebra",
+    "Combinational circuits, MUX/DEMUX",
+    "Sequential circuits, flip-flops, counters"
+   ]
+  },
+  {
+   "id": "a-conv",
+   "sec": "analog",
+   "title": "Schmitt Trigger, S/H, ADC and DAC",
+   "hours": 3,
+   "ee": 1,
+   "ra": 1.5,
+   "pre": [
+    "a-opamp"
+   ],
+   "sub": [
+    "Schmitt triggers",
+    "Sample and hold",
+    "A/D and D/A converters"
+   ]
+  },
+  {
+   "id": "em-tx",
+   "sec": "machines",
+   "title": "Transformers",
+   "hours": 7,
+   "ee": 3,
+   "ra": 0,
+   "pre": [
+    "c-2port"
+   ],
+   "sub": [
+    "Single-phase equivalent circuit, OC/SC tests, regulation, efficiency",
+    "Three-phase connections, vector groups, parallel operation",
+    "Auto-transformer"
+   ]
+  },
+  {
+   "id": "em-dc",
+   "sec": "machines",
+   "title": "Electromechanical Conversion and DC Machines",
+   "hours": 5,
+   "ee": 1.5,
+   "ra": 0,
+   "pre": [
+    "em-tx"
+   ],
+   "sub": [
+    "Energy conversion principles",
+    "DC motor/generator characteristics",
+    "Speed control"
+   ]
+  },
+  {
+   "id": "em-im",
+   "sec": "machines",
+   "title": "Induction Machines",
+   "hours": 6,
+   "ee": 2.5,
+   "ra": 0,
+   "pre": [
+    "em-tx"
+   ],
+   "sub": [
+    "Principle, torque-speed characteristics",
+    "No-load/blocked-rotor tests, equivalent circuit",
+    "Starting and speed control, single-phase IM"
+   ]
+  },
+  {
+   "id": "em-sm",
+   "sec": "machines",
+   "title": "Synchronous Machines",
+   "hours": 6,
+   "ee": 3,
+   "ra": 0,
+   "pre": [
+    "em-tx"
+   ],
+   "sub": [
+    "Cylindrical and salient pole",
+    "Regulation, parallel operation",
+    "Starting of synchronous motors, losses and efficiency"
+   ]
+  },
+  {
+   "id": "ps-line",
+   "sec": "power",
+   "title": "Transmission Lines, Cables, Per-unit",
+   "hours": 6,
+   "ee": 2,
+   "ra": 0,
+   "pre": [
+    "c-2port"
+   ],
+   "sub": [
+    "Line models and performance",
+    "Cables, insulators, distribution",
+    "Per-unit quantities, series/shunt compensation"
+   ]
+  },
+  {
+   "id": "ps-load",
+   "sec": "power",
+   "title": "Load Flow and Economic Dispatch",
+   "hours": 5,
+   "ee": 2,
+   "ra": 0,
+   "pre": [
+    "ps-line"
+   ],
+   "sub": [
+    "Bus admittance matrix",
+    "Gauss-Seidel, Newton-Raphson",
+    "Economic load dispatch, voltage/frequency control"
+   ]
+  },
+  {
+   "id": "ps-fault",
+   "sec": "power",
+   "title": "Symmetrical Components and Faults",
+   "hours": 5,
+   "ee": 2.5,
+   "ra": 0,
+   "pre": [
+    "ps-line"
+   ],
+   "sub": [
+    "Symmetrical components",
+    "Symmetrical and unsymmetrical faults"
+   ]
+  },
+  {
+   "id": "ps-prot",
+   "sec": "power",
+   "title": "Protection and Circuit Breakers",
+   "hours": 4,
+   "ee": 1.5,
+   "ra": 0,
+   "pre": [
+    "ps-fault"
+   ],
+   "sub": [
+    "Overcurrent, differential, directional, distance protection",
+    "Circuit breakers"
+   ]
+  },
+  {
+   "id": "ps-stab",
+   "sec": "power",
+   "title": "Power System Stability",
+   "hours": 4,
+   "ee": 2,
+   "ra": 0,
+   "pre": [
+    "ps-fault"
+   ],
+   "sub": [
+    "Stability concepts",
+    "Equal area criterion"
+   ]
+  },
+  {
+   "id": "pe-dev",
+   "sec": "pe",
+   "title": "Power Devices and Gating",
+   "hours": 3,
+   "ee": 1,
+   "ra": 0,
+   "pre": [
+    "a-diode"
+   ],
+   "sub": [
+    "Thyristor, MOSFET, IGBT V-I characteristics",
+    "Firing/gating circuits"
+   ]
+  },
+  {
+   "id": "pe-dcdc",
+   "sec": "pe",
+   "title": "DC-DC Converters",
+   "hours": 4,
+   "ee": 2,
+   "ra": 0,
+   "pre": [
+    "pe-dev"
+   ],
+   "sub": [
+    "Buck",
+    "Boost",
+    "Buck-boost"
+   ]
+  },
+  {
+   "id": "pe-rect",
+   "sec": "pe",
+   "title": "Rectifiers and Line Harmonics",
+   "hours": 6,
+   "ee": 3.5,
+   "ra": 0,
+   "pre": [
+    "pe-dev"
+   ],
+   "sub": [
+    "Single/three-phase uncontrolled and thyristor converters",
+    "Bidirectional AC-DC converters",
+    "Harmonics, power factor, distortion factor"
+   ]
+  },
+  {
+   "id": "pe-inv",
+   "sec": "pe",
+   "title": "Inverters and SPWM",
+   "hours": 5,
+   "ee": 2.5,
+   "ra": 0,
+   "pre": [
+    "pe-rect"
+   ],
+   "sub": [
+    "Single/three-phase VSI and CSI",
+    "Sinusoidal PWM"
+   ]
+  },
+  {
+   "id": "em-es",
+   "sec": "emf",
+   "title": "Electrostatics",
+   "hours": 5,
+   "ee": 2.5,
+   "ra": 0,
+   "pre": [
+    "m-calc"
+   ],
+   "sub": [
+    "Coulomb, field intensity, flux density, Gauss",
+    "Potential for line/plane/sphere",
+    "Dielectrics, capacitance"
+   ]
+  },
+  {
+   "id": "em-ms",
+   "sec": "emf",
+   "title": "Magnetostatics and Magnetic Circuits",
+   "hours": 5,
+   "ee": 2,
+   "ra": 0,
+   "pre": [
+    "em-es"
+   ],
+   "sub": [
+    "Biot-Savart, Ampere, Faraday, Lorentz force",
+    "MMF, reluctance, magnetic circuits",
+    "Self and mutual inductance"
+   ]
+  },
+  {
+   "id": "me-all",
+   "sec": "meas",
+   "title": "Electrical and Electronic Measurements",
+   "hours": 6,
+   "ee": 3,
+   "ra": 0,
+   "pre": [
+    "c-trans"
+   ],
+   "sub": [
+    "Bridges, potentiometers",
+    "V, I, P, E, pf measurement, instrument transformers",
+    "DVMs, oscilloscopes, error analysis"
+   ]
+  },
+  {
+   "id": "r-mech",
+   "sec": "ra",
+   "title": "Engineering Mechanics",
+   "hours": 7,
+   "ee": 0,
+   "ra": 3,
+   "pre": [
+    "m-calc"
+   ],
+   "sub": [
+    "Free-body diagrams, equilibrium",
+    "Friction, belt-pulley, trusses and frames",
+    "Rigid body plane kinematics and dynamics"
+   ]
+  },
+  {
+   "id": "r-sens",
+   "sec": "ra",
+   "title": "Sensors and Signal Conditioning",
+   "hours": 5,
+   "ee": 0,
+   "ra": 4,
+   "pre": [
+    "a-opamp"
+   ],
+   "sub": [
+    "Resistive, capacitive, inductive, piezoelectric, Hall sensors",
+    "Displacement, velocity, acceleration, force, torque, pressure"
+   ]
+  },
+  {
+   "id": "r-act",
+   "sec": "ra",
+   "title": "Actuators",
+   "hours": 4,
+   "ee": 0,
+   "ra": 4,
+   "pre": [],
+   "sub": [
+    "Hydraulic and pneumatic actuators",
+    "DC, stepper and servo motors"
+   ]
+  },
+  {
+   "id": "r-prog",
+   "sec": "ra",
+   "title": "Programming in Python",
+   "hours": 5,
+   "ee": 0,
+   "ra": 2,
+   "pre": [],
+   "sub": [
+    "Flowcharts, pseudo code",
+    "Data types, control flow, functions",
+    "Arrays, dictionaries, strings, recursion"
+   ]
+  },
+  {
+   "id": "r-ds",
+   "sec": "ra",
+   "title": "Data Structures",
+   "hours": 5,
+   "ee": 0,
+   "ra": 2,
+   "pre": [
+    "r-prog"
+   ],
+   "sub": [
+    "Stack, queue, linked list",
+    "Binary search tree, heap, graph"
+   ]
+  },
+  {
+   "id": "r-micro",
+   "sec": "ra",
+   "title": "Microcontrollers and Data Acquisition",
+   "hours": 5,
+   "ee": 0,
+   "ra": 1.5,
+   "pre": [
+    "a-dig"
+   ],
+   "sub": [
+    "CPU, memory, I/O ports, timers",
+    "Interrupts, interfacing",
+    "Data acquisition basics"
+   ]
+  },
+  {
+   "id": "r-smps",
+   "sec": "ra",
+   "title": "Switched Mode Power Supplies",
+   "hours": 2,
+   "ee": 0,
+   "ra": 1,
+   "pre": [
+    "pe-dcdc"
+   ],
+   "sub": [
+    "SMPS fundamentals"
+   ]
+  },
+  {
+   "id": "r-kin",
+   "sec": "ra",
+   "title": "Robot Kinematics and Transformations",
+   "hours": 8,
+   "ee": 0,
+   "ra": 12,
+   "pre": [
+    "m-la"
+   ],
+   "sub": [
+    "Serial/parallel manipulators, links, joints, DOF",
+    "2D/3D rotation matrices",
+    "Homogeneous transformations, forward kinematics"
+   ]
+  },
+  {
+   "id": "r-app",
+   "sec": "ra",
+   "title": "Robot Applications and Accuracy",
+   "hours": 3,
+   "ee": 0,
+   "ra": 3,
+   "pre": [
+    "r-kin"
+   ],
+   "sub": [
+    "Point-to-point and continuous path control",
+    "End-effectors, accuracy and repeatability"
+   ]
+  },
+  {
+   "id": "r-cim",
+   "sec": "ra",
+   "title": "Computer Integrated Manufacturing and Automation",
+   "hours": 6,
+   "ee": 0,
+   "ra": 5,
+   "pre": [],
+   "sub": [
+    "PLCs, automated material handling, AS/RS",
+    "Automated identification",
+    "CNC, multi-axis positioning, concurrent design"
+   ]
+  },
+  {
+   "id": "ga",
+   "sec": "ga",
+   "title": "General Aptitude (verbal, numerical, reasoning)",
+   "hours": 0,
+   "ee": 0,
+   "ra": 0,
+   "pre": [],
+   "sub": [
+    "Verbal ability",
+    "Numerical ability",
+    "Analytical and spatial reasoning",
+    "Data interpretation"
+   ]
+  }
+ ]
+}

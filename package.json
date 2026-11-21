@@ -1,0 +1,23 @@
+{
+  "name": "gate-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "dexie": "^4.0.8",
+    "katex": "^0.16.11",
+    "preact": "^10.24.0",
+    "ts-fsrs": "^6.0.0"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.0",
+    "vite": "^5.4.0",
+    "vitest": "^2.1.0"
+  }
+}

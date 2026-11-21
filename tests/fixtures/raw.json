@@ -1,0 +1,10 @@
+[
+  {"paper":"EE","year":2099,"qno":"1","type":"MCQ","marks":1,"text":"SYNTHETIC: The eigenvalues of [[2,0],[0,3]] are","options":{"A":"2, 3","B":"0, 5","C":"1, 6","D":"2, 2"},"concept":{"id":"m-la","confidence":0.95}},
+  {"paper":"EE","year":2099,"qno":"2","type":"NAT","marks":2,"text":"SYNTHETIC: A boost converter has Vin 10 V and D 0.5. Output voltage in V is","concept":{"id":"pe-dcdc","confidence":0.9}},
+  {"paper":"EE","year":2099,"qno":"3","type":"MSQ","marks":2,"text":"SYNTHETIC: Which are linear systems?","options":{"A":"y=2x","B":"y=x^2","C":"y=x+3","D":"y=dx/dt"},"concept":{"id":"s-basic","confidence":0.85}},
+  {"paper":"EE","year":2099,"qno":"4","type":"MCQ","marks":1,"text":"SYNTHETIC: low confidence tag","options":{"A":"p","B":"q"},"concept":{"id":"c-thm","confidence":0.4}},
+  {"paper":"EE","year":2099,"qno":"5","type":"MCQ","marks":1,"text":"SYNTHETIC: no key for this one","options":{"A":"p","B":"q"},"concept":{"id":"c-thm","confidence":0.9}},
+  {"paper":"EE","year":2098,"qno":"9","type":"MCQ","marks":1,"text":"synthetic: the eigenvalues of [[2,0],[0,3]]  are","options":{"A":"2, 3","B":"0, 5","C":"1, 6","D":"2, 2"},"concept":{"id":"m-la","confidence":0.95}},
+  {"paper":"EE","year":2099,"qno":"6","type":"MCQ","marks":1,"text":"SYNTHETIC: figure question","options":{"A":"p","B":"q"},"figurePage":4,"concept":{"id":"c-basic","confidence":0.9}},
+  {"paper":"RA","year":2099,"qno":"7","type":"NAT","marks":1,"text":"SYNTHETIC: unknown concept id","concept":{"id":"zzz","confidence":0.9}}
+]
