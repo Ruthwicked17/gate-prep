@@ -40,3 +40,6 @@ PDFs --extract.py--> text --Claude Code (segment-prompt.md)--> raw-questions.jso
 ## Figure pictures and General Aptitude
 - `ga-raw.py` writes `private/pyq/raw-ga.json` (GA questions typed from the papers; answers come from the key). Merge it with the EE raw file into `raw-all.json`, then run `build-pack.mjs private/pyq/raw-all.json`.
 - `add-figures.py` (needs `pip install pymupdf`) attaches a picture of the original paper page to every figure-dependent question in the pack. Figure questions then show the page in Practice/Review and are included in mocks. Run it after `build-pack.mjs`; the pack grows to about 11 MB.
+
+## Scanned papers (2021)
+The 2021 paper and key have no text layer. There is no OCR engine here, so the pages were rendered to images and read directly; the transcription lives in `private/pyq/ocr2021.py` (answers still come from `keys.csv`, which was typed from the official key pages). Numeric answers were re-derived independently as a check on the transcription.
